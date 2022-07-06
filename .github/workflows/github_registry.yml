@@ -30,7 +30,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v1
         with:
-          registry: ghcr.io
+          registry: agent47
           username: ${{ DOCKER_HUB_USERNAME }}
           password: ${{ DOCKER_HUB_ACCESS_TOKEN }}
       -
